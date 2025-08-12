@@ -1,0 +1,1 @@
+alert('Use OK if like this site!')
