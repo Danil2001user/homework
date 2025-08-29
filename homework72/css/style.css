@@ -19,7 +19,7 @@ body{
     border-radius: 100px;
     border: 2px #fff solid;
     background: #d76a6a;
-    transform: translate(471px,45px);
+    transform: translate(617px, 44px);
 }
 .title::after{
     content: "";
@@ -29,5 +29,6 @@ body{
     border-radius: 100px;
     border: 2px #fff solid;
     background: #5f6ae5;
-    transform: translate(758px,-44px);
+    transform: translate(927px, -45px);
+
 }
