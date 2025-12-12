@@ -1,5 +1,5 @@
 (function () {
-
+    //  burger
 
     document.addEventListener('click', burgerInit)
 
@@ -28,6 +28,9 @@
 
     }
 
+    //   Modal
+
+
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.about-img_button')
 
@@ -50,41 +53,114 @@
 
     }
 
-    // Первый вариант модалки!
-    
-    // const openButton = document.querySelector('.about-img_button');
-    // const modal = document.querySelector('.modal');
-    // const closeButton = document.querySelector('.modal-cancel');
-    
-    // function openModal() {
-    //   modal.classList.add('modal--opened');
-    //   document.body.classList.add('body--opened-modal'); 
-    // }
-    
-    
-    // function closeModal() {
-    //   modal.classList.remove('modal--opened');
-    //   document.body.classList.remove('body--opened-modal');
-    // }
-    
-    // if (openButton) {
-    //   openButton.addEventListener('click', openModal);
-    // }
-    
-    // if (closeButton) {
-    //   closeButton.addEventListener('click', closeModal);
-    // }
-    
-    // modal.addEventListener('click', (e) => {
-    //   if (e.target === modal) {
-    //     closeModal();
-    //   }
-    // });
-    
-    // document.addEventListener('keydown', (e) => {
-    //   if (e.key === 'Escape' && modal.classList.contains('modal--opened')) {
-    //     closeModal();
-    //   }
-    // });
+
+    //    Tab
+
+    const tabControls = document.querySelector('.tab-controls')
+
+
+    tabControls.addEventListener('click', toggleTab)
+
+    function toggleTab(e) {
+
+        const tabControl = e.target.closest('.tab-controls-link ')
+
+
+        if (!tabControl) return
+        e.preventDefault()
+        if (tabControl.classList.contains('tab-controls-link--active')) return
+
+        const tabContentID = tabControl.getAttribute('href')
+        const tabContent = document.querySelector(tabContentID)
+        const activeControl = document.querySelector('.tab-controls-link--active')
+        const activeContent = document.querySelector('.tab-content--show')
+
+        if (activeControl) {
+            activeControl.classList.remove('tab-controls-link--active')
+        }
+
+        if (activeContent) {
+            activeContent.classList.remove('tab-content--show')
+        }
+
+
+        tabControl.classList.add('tab-controls-link--active')
+        tabContent.classList.add('tab-content--show')
+
+    }
+
+    // Аккордион
+
+    const accordionLists = document.querySelectorAll('.accordion-list');
+
+    accordionLists.forEach(el => {
+
+
+        el.addEventListener('click', (e) => {
+
+            const accordionList = e.currentTarget
+            const accordionOpenedItem = accordionList.querySelector('.accordion-list-item--opened')
+            const accordionOpenedContent = accordionList.querySelector('.accordion-list-item--opened .accordion-list-content')
+
+            const accordionControl = e.target.closest('.accordion-list-control')
+            if (!accordionControl) return
+            const accordionItem = accordionControl.parentElement;
+            const accordionContent = accordionControl.nextElementSibling;
+
+
+            if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+                accordionOpenedItem.classList.remove('accordion-list-item--opened');
+                accordionOpenedContent.style.maxHeight = null;
+            }
+
+
+            accordionItem.classList.toggle('accordion-list-item--opened');
+
+            if (accordionItem.classList.contains('accordion-list-item--opened')) {
+                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+
+            } else {
+                accordionContent.style.maxHeight = null;
+            }
+
+        })
+    })
+
+//   document.addEventListener('DOMContentLoaded', () => {
+//   const accordionLists = document.querySelectorAll('.accordion-list');
+
+//   accordionLists.forEach(accordionList => {
+//     accordionList.addEventListener('click', (e) => {
+//       const control = e.target.closest('.accordion-list-control');
+//       if (!control) return;
+
+//       const item = control.parentElement; // 
+//       const content = control.nextElementSibling; 
+
+      
+//       const openedItem = accordionList.querySelector('.accordion-list-item--opened');
+//       const openedContent = openedItem ? openedItem.querySelector('.accordion-list-content') : null;
+
+     
+//       if (item.classList.contains('accordion-list-item--opened')) {
+//         item.classList.remove('accordion-list-item--opened');
+//         content.style.maxHeight = '0px';
+//         return;
+//       }
+
+     
+//       if (openedItem && openedContent) {
+//         openedItem.classList.remove('accordion-list-item--opened');
+//         openedContent.style.maxHeight = '0px';
+//       }
+
+      
+//       item.classList.add('accordion-list-item--opened');
+
+      
+//       content.style.maxHeight = content.scrollHeight + 'px';
+//     });
+//   });
+// });
 
 })()
