@@ -123,44 +123,40 @@
                 accordionContent.style.maxHeight = null;
             }
 
-        })
-    })
+        });
+    });
 
-//   document.addEventListener('DOMContentLoaded', () => {
-//   const accordionLists = document.querySelectorAll('.accordion-list');
 
-//   accordionLists.forEach(accordionList => {
-//     accordionList.addEventListener('click', (e) => {
-//       const control = e.target.closest('.accordion-list-control');
-//       if (!control) return;
+    // Слайдер в галерее
 
-//       const item = control.parentElement; // 
-//       const content = control.nextElementSibling; 
+    const swiper = new Swiper('.gallery__slider', {
 
-      
-//       const openedItem = accordionList.querySelector('.accordion-list-item--opened');
-//       const openedContent = openedItem ? openedItem.querySelector('.accordion-list-content') : null;
+        spaceBetween: 15,
+        slidesPerView: 1.5,
 
-     
-//       if (item.classList.contains('accordion-list-item--opened')) {
-//         item.classList.remove('accordion-list-item--opened');
-//         content.style.maxHeight = '0px';
-//         return;
-//       }
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction',
+        },
 
-     
-//       if (openedItem && openedContent) {
-//         openedItem.classList.remove('accordion-list-item--opened');
-//         openedContent.style.maxHeight = '0px';
-//       }
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
 
-      
-//       item.classList.add('accordion-list-item--opened');
+        breakpoints: {
+            601: {
+                slidesPerView: 3,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            1101: {
+                slidesPerView: 4,
+            }
+        }
 
-      
-//       content.style.maxHeight = content.scrollHeight + 'px';
-//     });
-//   });
-// });
+    });
+
 
 })()
