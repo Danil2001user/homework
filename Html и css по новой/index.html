@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МИ УМНЫЙ</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="chest-container" onclick="openChest()">
+        <div class="chest"></div>
+        <a href="#" class="legend">
+               ЛЕГЕНДА <span>ЗДЕСЬ</span>
+        </a>
+        <div class="image-container">
+            <img class="me" src="./img/i am2.jpg" alt="Джеймс Бонд">
+            <audio class="good" id="audio" src="./audio/Меня зовут Бонд - Джеймс Бонд.mp3" controls loop></audio>
+        </div>
+    </div>
+
+    <script>
+        let isOpen = false;
+        
+        function openChest() {
+            const container = document.querySelector('.chest-container');
+            const audio = document.getElementById('audio');
+            
+            if (!isOpen) {
+                container.classList.add('active');
+                audio.play();
+                isOpen = true;
+            } else {
+                container.classList.remove('active');
+                audio.pause();
+                audio.currentTime = 0;
+                isOpen = false;
+            }
+        }
+    </script>
+</body>
+</body>
+
+</html>
