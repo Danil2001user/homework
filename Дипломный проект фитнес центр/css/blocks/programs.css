@@ -1,0 +1,140 @@
+.programs {
+    margin-top: 103px;
+}
+
+
+
+.heading-programs {
+    position: relative;
+    text-align: center;
+}
+
+.programs-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.programs-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    color: #979797;
+    text-align: center;
+
+}
+
+.within-programs {
+    position: absolute;
+    bottom: 40px;
+    right: -300px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 250px;
+    line-height: 98%;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+
+/* -------------------- */
+
+.programs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 134px;
+    position: relative;
+}
+
+.programs {
+    position: relative;
+}
+
+
+.programs__sport {
+    margin-bottom: 33px;
+}
+
+.text-afish {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: var(--secondary-color);
+
+}
+
+.strengh::before {
+    content: '•';
+    color: var(--main-color);
+    padding-left: 5px;
+    padding-right: 8px;
+}
+
+.gym-programs {
+    padding-top: 4px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    color: #fff;
+    border-bottom: 1px solid var(--disabled-color);
+    padding-bottom: 24px;
+}
+
+.vector-img {
+    position: absolute;
+    top: -142px;
+    left: -198px;
+    z-index: -1;
+}
+
+/* ----------hover------------ */
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 165, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    background: var(--programs-color);
+
+}
+
+
+.gym-programs::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9500;
+    transition: width 1s ease;
+}
+
+
+.gym-programs:hover::after {
+    width: 100%;
+}

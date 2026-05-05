@@ -1,0 +1,28 @@
+/* base */
+
+@import "./base/normilize.css";
+@import "./base/fonts.css";
+@import "./base/global.css";
+@import "./base/vars.css";
+@import "./base/media.css";
+
+/* blocks */
+
+@import "./blocks/header.css";
+@import "./blocks/banner.css";
+@import "./blocks/card.css";
+@import "./blocks/be-better.css";
+@import "./blocks/approach.css";
+@import "./blocks/training-men-women.css";
+@import "./blocks/programs.css";
+@import "./blocks/view.css";
+@import "./blocks/box.css";
+@import "./blocks/pulse.css";
+@import "./blocks/training.css";
+@import "./blocks/classes.css";
+@import "./blocks/videos.css";
+@import "./blocks/center.css";
+@import "./blocks/meet-pros.css";
+@import "./blocks/lastest-blog.css";
+@import "./blocks/footer.css";
+@import "./blocks/copyright.css";

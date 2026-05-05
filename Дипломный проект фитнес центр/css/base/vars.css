@@ -1,0 +1,20 @@
+:root {
+
+    --font-family: "Oswald", sans-serif;
+    --second-family: "Archivo", sans-serif;
+
+    /* color */
+
+    --main-color: #ffffff ;
+
+    --bg-color: #141414;
+    --secondary-color: #f47521;
+    --programs-color: #f4752166;
+    --disabled-color: #cecece;
+
+
+    /* container */
+    --container-width: 1240px;
+    --container-padding: 15px;
+
+}
