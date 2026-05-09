@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Oswald';
     src: local("Oswald SemiBold"), local("Oswald-SemiBold"),
-        url("/fonts/Oswald-SemiBold.woff2") format('woff2');
+        url("/./fonts/Oswald-SemiBold.woff2") format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'Oswald';
     src: local("Oswald Regular"), local("Oswald-Regular"),
-        url("/fonts/Oswald-Regular.woff2") format('woff2');
+        url("/./fonts/Oswald-Regular.woff2") format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'Oswald';
     src: local("Oswald Medium"), local("Oswald-Medium"),
-        url("/fonts/Oswald-Medium.woff2") format('woff2');
+        url("/./fonts/Oswald-Medium.woff2") format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -31,7 +31,7 @@
 @font-face {
     font-family: 'Archivo';
     src: local("Archivo Regular"), local("Archivo-Regular"),
-        url('/fonts/Archivo-Regular.woff2') format('woff2');
+        url('/./fonts/Archivo-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: 'Archivo';
-    src: local("Archivo SemiBold"), local("Archivo-SemiBold"), url('/fonts/Archivo-SemiBold.woff2') format('woff2');
+    src: local("Archivo SemiBold"), local("Archivo-SemiBold"), url('/./fonts/Archivo-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -48,7 +48,7 @@
 @font-face {
     font-family: 'Archivo';
     src: local("Archivo Bold"), local("Archivo-Bold"),
-        url('/fonts/Archivo-Bold.woff2') format('woff2');
+        url('/./fonts/Archivo-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: 'Archivo';
-    src: url('/fonts/Archivo-Medium.woff2') format('woff2');
+    src: url('/./fonts/Archivo-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;

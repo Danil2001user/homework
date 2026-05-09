@@ -53,7 +53,7 @@
     position: relative;
 }
 
-.programs {
+.programs-card {
     position: relative;
 }
 
@@ -95,35 +95,43 @@
     z-index: -1;
 }
 
-/* ----------hover------------ */
+.programs-card {
+    margin-top: 50px;
+}
+
+/* ---------hover------------------- */
+
+
+.programs-card {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.programs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
 
 .image-container {
     position: relative;
+    overflow: hidden;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
     display: block;
+    transition: filter 0.3s ease;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 165, 0, 0);
-    transition: background 0.3s ease;
+.programs-card:hover .image-container img {
+    filter: brightness(0.9);
 }
 
-.image-container:hover .overlay {
-    background: var(--programs-color);
-
-}
-
-
-.gym-programs::after {
+/* Псевдоэлемент теперь создаётся для карточки, а не для .gym-programs */
+.programs-card::after {
     content: '';
     position: absolute;
     left: 0;
@@ -131,10 +139,17 @@
     width: 0;
     height: 3px;
     background-color: #ff9500;
-    transition: width 1s ease;
+    transition: width 0.4s ease;
+    pointer-events: none;
+    /* Чтобы линия не мешала клику по карточке */
 }
 
-
-.gym-programs:hover::after {
+/* При наведении на карточку линия заполняется на 100 % */
+.programs-card:hover::after {
     width: 100%;
+}
+
+.gym-programs {
+    position: relative;
+    /* Оставляем на случай, если внутри будут другие абсолютные элементы */
 }

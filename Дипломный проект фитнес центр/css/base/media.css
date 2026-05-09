@@ -1,5 +1,8 @@
+/* --------------header------------- */
+
+
 @media (max-width: 1025px) {
-   
+
 
     .menu__list {
         gap: 28px;
@@ -367,9 +370,7 @@
         height: auto;
     }
 
-    .img-protein {
-        opacity: 0;
-    }
+
 }
 
 
@@ -415,12 +416,7 @@
         display: block;
     }
 
-    /* Скрываем сложные элементы правой части на мобильных */
-    .info-block,
-    .power-img,
-    .vector {
-        display: none;
-    }
+
 
     /* Перестраиваем скролл‑контейнер */
     .scroll-container {
@@ -1424,6 +1420,26 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .container-timetable table {
+        width: 100%;
+        table-layout: auto;
+        font-size: 0.9em;
+    }
+
+    .container-timetable th,
+    .container-timetable td {
+        padding: 6px 4px;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .container-timetable .fitness {
+        font-size: 0.85em;
+    }
+}
+
+
 
 @media (max-width: 890px) {
     .classes {
@@ -1622,59 +1638,71 @@
     }
 }
 
-
-@media (max-width: 480px) {
-    .classes {
-        margin-top: 40px;
-    }
-
+@media (max-width: 768px) {
     .container-timetable {
-        margin-bottom: 60px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .classes-title {
-        font-size: 28px;
-        padding-bottom: 25px;
+    .container-timetable table {
+        border-spacing: 0;
+        font-size: 0.85em;
     }
 
-    .mobile-menu-toggle {
-        width: 26px;
-        height: 18px;
+    .container-timetable th,
+    .container-timetable td {
+        padding: 8px 6px;
+        white-space: nowrap;
     }
 
-    .timetable-list.active {
-        padding-bottom: 15px;
-    }
-
-    .timetable-link {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    .card {
-        padding: 12px;
-        border-radius: 8px;
-    }
-
-    .card-time {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-    .day-name {
-        font-size: 12px;
+    .container-timetable .fitness {
+        display: block;
         margin-bottom: 4px;
-    }
-
-    .fitness {
-        font-size: 14px;
-        margin-bottom: 3px;
-    }
-
-    .trainer {
-        font-size: 1
+        font-weight: bold;
     }
 }
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .container-timetable table,
+    .container-timetable thead,
+    .container-timetable tbody,
+    .container-timetable th,
+    .container-timetable td,
+    .container-timetable tr {
+        display: block;
+    }
+
+    .container-timetable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .container-timetable tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .container-timetable td {
+        border: none;
+        position: relative;
+    
+    }
+
+    .container-timetable td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+    }
+}
+
 
 
 /* ------------view----------------- */

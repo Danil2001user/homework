@@ -42,7 +42,8 @@
     position: absolute;
     top: -6%;
     left: 49%;
-    transform: translateX(-50%); /* Убрали вертикальное смещение */
+    transform: translateX(-50%);
+    /* Убрали вертикальное смещение */
     z-index: 10;
 }
 
@@ -56,6 +57,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.svg-play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 /* -------------------------*/
@@ -69,8 +78,3 @@
     height: auto;
     display: block;
 }
-
-
-
-
-

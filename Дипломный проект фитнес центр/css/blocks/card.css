@@ -21,11 +21,18 @@
     padding: 20px;
     box-sizing: border-box;
     position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .card-main:hover {
-    color: #8e2f2f;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-color);
+    
 }
+
+
 
 .card-poster {
     padding-top: 30px;

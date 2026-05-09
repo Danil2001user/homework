@@ -10,7 +10,9 @@
 .view-heading {
     text-align: center;
     position: relative;
+    transition: all .5s;
 }
+
 
 .view-text {
     color: var(--bg-color);
@@ -30,3 +32,10 @@
     cursor: pointer;
     transform: translateX(275%); /* Центрируем относительно правого края */
 }
+
+/* -----------hover----------- */
+
+.view-heading:hover {
+    transform: translateX(3%) scale(1.15);
+}
+

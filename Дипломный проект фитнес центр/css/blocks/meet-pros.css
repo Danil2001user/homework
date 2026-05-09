@@ -98,6 +98,8 @@
 /* --------hover------------ */
 
 
+
+
 .image__meet-container {
     position: relative;
 }
@@ -117,26 +119,39 @@
     transition: background 0.3s ease;
 }
 
-.image__meet-container:hover .overlay {
+.meet-card:hover .overlay {
     background: var(--programs-color);
-
 }
 
+/* Псевдоэлемент теперь создаётся для карточки, а не для .gym-meet */
+.meet-card {
+    position: relative;
+    /* Обязательно для работы абсолютного позиционирования внутри */
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+}
 
-.gym-meet::after {
+.meet-card::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
+    /* Линия внизу карточки */
     width: 0;
     height: 3px;
     background-color: #ff9500;
     transition: width 1s ease;
+    pointer-events: none;
 }
 
 
-.gym-meet:hover::after {
+.meet-card:hover::after {
     width: 100%;
+}
+.meet-card:hover{
+    transform: scale(1.02);
 }
 
 .meet__pros-svg {

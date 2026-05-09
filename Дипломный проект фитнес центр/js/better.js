@@ -1,59 +1,63 @@
-const circles = document.querySelectorAll('.circle');
-
-circles.forEach(circle => {
-    circle.addEventListener('mouseenter', () => {
-        console.log(`Наведён на кружок №${circle.dataset.num}`);
-    });
-
-    circle.addEventListener('click', () => {
-        alert(`Клик на кружок №${circle.dataset.num}`);
-    });
-});
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.container-pulse [data-tab]');
-    const contentContainers = document.querySelectorAll('.container-best .tab-container');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
 
-    function switchContent(tab) {
-        const tabId = tab.dataset.tab;
+    let currentSlide = 0;
+    let autoSlideInterval;
 
-        tabs.forEach(t => t.classList.remove('active'));
-        contentContainers.forEach(c => c.classList.remove('active'));
+    // Функция показа слайда
+    function showSlide(n) {
+        // Скрываем все слайды
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
 
-        // Добавляем активный класс текущему табу
-        tab.classList.add('active');
+        // Убираем активный класс у всех точек
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
 
-        // Находим соответствующий контент и делаем его активным
-        const targetContent = document.querySelector(`.tab-container#${tabId}-content`);
-        if (targetContent) {
-            targetContent.classList.add('active');
-        }
+        // Корректируем индекс, если он выходит за границы
+        currentSlide = (n + slides.length) % slides.length;
+
+        // Показываем нужный слайд
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+
+        // Перезапускаем автопрокрутку
+        resetAutoSlide();
     }
 
-    // Обработчик для li элементов
-    document.querySelector('.container-pulse ul li').addEventListener('click', function (e) {
-        e.preventDefault();
-        switchContent(this);
-    });
+    // Функция для перехода к следующему слайду
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
 
-    // Обработчики для p элементов
-    document.querySelectorAll('.plan-relative .plan-text').forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
-            switchContent(this);
+    // Функция для перехода к предыдущему слайду
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+   
+
+    // Обработчики для кнопок навигации
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+
+    // Обработчики для точек навигации
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
         });
     });
 
-    // Инициализация - показываем первый контент при загрузке
-    const initialTab = document.querySelector('.container-pulse .pulse-relative.active');
-    if (initialTab) {
-        switchContent(initialTab);
-    }
+
+
+
 });
+
 
 // ----------------------------
 
@@ -125,30 +129,52 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// -----------tab-------------
+// -----------tab-pulse-------------
 
-document.addEventListener('DOMContentLoaded', function () {
-    const tabLinks = document.querySelectorAll('.tabs-nav a');
-    const tabContents = document.querySelectorAll('.tab-pane');
+document.addEventListener('DOMContentLoaded', function() {
+    // Получаем все элементы табов и их содержимое
+    const tabLinks = document.querySelectorAll('.pulse-relative, .plan-text');
+    const tabContainers = document.querySelectorAll('.tab-container');
 
+    // Функция для переключения табов
+    function switchTab(tabId) {
+        // Скрываем все контейнеры с содержимым
+        tabContainers.forEach(container => {
+            container.classList.remove('active');
+        });
+
+        // Убираем активный класс у всех ссылок/пунктов табов
+        tabLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Показываем нужный контейнер с содержимым
+        const targetContainer = document.getElementById(tabId + '-content');
+        if (targetContainer) {
+            targetContainer.classList.add('active');
+        }
+
+        // Добавляем активный класс к текущему пункту таба
+        event.target.classList.add('active');
+    }
+
+    // Добавляем обработчики событий для всех элементов табов
     tabLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Предотвращаем стандартное поведение ссылки
 
-            // Убираем активный класс у всех вкладок и контента
-            tabLinks.forEach(item => item.classList.remove('active'));
-            tabContents.forEach(item => item.classList.remove('active'));
+            // Получаем ID таба из атрибута data-tab
+            const tabId = this.getAttribute('data-tab');
 
-            // Активируем текущую вкладку и контент
-            this.classList.add('active');
-            const tabId = this.getAttribute('href');
-            document.querySelector(tabId).classList.add('active');
+            // Переключаем таб
+            switchTab(tabId);
         });
     });
 
-    // По умолчанию активируем первую вкладку
-    if (!document.querySelector('.tabs-nav a.active')) {
-        tabLinks.click();
+    // Активируем первый таб по умолчанию при загрузке страницы
+    if (tabLinks.length > 0) {
+        const firstTabId = tabLinks[0].getAttribute('data-tab');
+        switchTab(firstTabId);
     }
 });
 

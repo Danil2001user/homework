@@ -71,7 +71,7 @@
 
 
 
-/* -------------------------- */
+/* -----------hover--------------- */
 .good-img {
     position: relative;
 }
@@ -92,7 +92,26 @@
     transition: background 0.3s ease;
 }
 
+
+.article-good{
+    transition: all .7s;
+}
+
 .good-img:hover .overlay {
     background: var(--programs-color);
+}
 
+.article-good:hover .title-training {
+    
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.article-good:hover {
+    transform: scale(1.03);
+    
+}
+
+.article-good:hover .training-link {
+    color: var(--highlight-color, #ff9933);
+    transition: color 0.3s ease;
 }
