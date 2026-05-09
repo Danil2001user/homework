@@ -1,0 +1,80 @@
+.abbreviation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    transform: translateY(20%);
+
+}
+
+
+.within {
+    position: absolute;
+    top: 32px;
+    right: -20px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 300px;
+    line-height: 98%;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.banner-title,
+.banner-title-2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 138px;
+    line-height: 98%;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+    margin: 0;
+}
+
+
+
+
+.pos-abs {
+    position: absolute;
+    top: -6%;
+    left: 49%;
+    transform: translateX(-50%);
+    /* Убрали вертикальное смещение */
+    z-index: 10;
+}
+
+.svg-play-button {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.svg-play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* -------------------------*/
+.gym-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.gym-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

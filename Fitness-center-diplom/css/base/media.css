@@ -1,0 +1,2753 @@
+/* --------------header------------- */
+
+
+@media (max-width: 1025px) {
+
+
+    .menu__list {
+        gap: 28px;
+        /* ещё уменьшаем отступы между пунктами меню */
+    }
+
+    .menu__link {
+        font-size: 13px;
+        /* уменьшаем размер шрифта */
+        padding: 0 8px;
+        /* добавляем небольшой горизонтальный отступ */
+    }
+
+    .header-actions {
+        gap: 18px;
+        /* сокращаем расстояние между иконками действий */
+    }
+
+    .header__actions-button {
+        width: 20px;
+        /* немного уменьшаем кнопки */
+        height: 20px;
+    }
+
+    /* Уменьшаем размеры иконок */
+    .header__actions-icon[width="34"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header__actions-icon[width="28"] {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+}
+
+
+
+/* Адаптация для экранов ~890px */
+@media (max-width: 890px) {
+    .header__container {
+        padding-top: 40px;
+        padding-bottom: 32px;
+    }
+
+    .menu__list {
+        gap: 30px;
+    }
+
+    .menu__link {
+        font-size: 12px;
+    }
+
+    .header-actions {
+        gap: 24px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+
+}
+
+/* Существующие медиа-запросы */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu.header__menu,
+    .header-actions {
+        display: none;
+    }
+
+    .header__actions-button {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu__link {
+        font-size: 20px;
+    }
+
+    .mobile-menu {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* Адаптация для экранов ~890px */
+@media (max-width: 890px) {
+    .header__container {
+        padding-top: 40px;
+        padding-bottom: 32px;
+    }
+
+    .menu__list {
+        gap: 30px;
+        /* Ещё уменьшаем отступы */
+    }
+
+    .menu__link {
+        font-size: 15px;
+        /* Дальнейшее уменьшение шрифта */
+    }
+
+    .header-actions {
+        gap: 24px;
+    }
+
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu.header__menu,
+    .header-actions {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .menu.header__menu,
+    .header-actions {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu__link {
+        font-size: 20px;
+    }
+
+    .mobile-menu {
+        width: 90%;
+    }
+}
+
+/* -------------banner--------- */
+
+
+
+@media (max-width: 1024px) {
+    .banner {
+        padding: 60px 0;
+    }
+
+    .abbreviation {
+        transform: translateY(15%);
+    }
+
+    .within {
+        display: none;
+    }
+
+    .banner-title,
+    .banner-title-2 {
+        font-size: 110px;
+    }
+
+    .container-card {
+        gap: 15px;
+        padding: 0 15px 35px;
+    }
+
+    .card {
+        min-width: 220px;
+    }
+
+    .card-poster {
+        font-size: 12px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .one-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 40px 0;
+    }
+
+    .abbreviation {
+        flex-direction: column;
+        align-items: center;
+        transform: none;
+        text-align: center;
+    }
+
+    .banner-title,
+    .banner-title-2 {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .within {
+        position: static;
+        opacity: 0.2;
+        font-size: 120px;
+        margin-top: -40px;
+        margin-bottom: -30px;
+    }
+
+    .gym-container {
+        margin: 15px 0;
+    }
+
+    .pos-abs {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .svg-play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container-card {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .card {
+        min-width: auto;
+    }
+
+    .card-main {
+        padding: 20px;
+    }
+
+    .card-poster {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin: 10px 0 8px;
+    }
+
+    .one-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    .banner {
+        padding: 30px 0;
+    }
+
+    .banner-title,
+    .banner-title-2 {
+        font-size: 28px;
+    }
+
+    .within {
+        font-size: 80px;
+        margin-top: -25px;
+        margin-bottom: -20px;
+    }
+
+    .pos-abs {
+        bottom: 15px;
+    }
+
+    .svg-play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container-card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .card-poster {
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ------------be-better---------------- */
+
+@media (max-width: 1024px) {
+    .better-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+    .content-right {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .better-title {
+        font-size: 80px;
+
+    }
+
+
+    .info-block {
+        display: none;
+    }
+
+    /* Выравнивание текста по центру внутри блоков story и mission */
+    .story,
+    .mission {
+        max-width: 100%;
+        padding-bottom: 50px;
+        text-align: center;
+        /* Выравниваем текст по центру */
+    }
+
+    .better-button {
+        padding: 15px 40px;
+        width: auto;
+        height: auto;
+    }
+
+
+}
+
+
+/* Адаптация для мобильных устройств (до 767 px) */
+@media (max-width: 767px) {
+    .better-container {
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .better-title {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .better-heading,
+    .better-heading-2 {
+        font-size: 24px;
+    }
+
+    .better-text,
+    .better-text-2 {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .story {
+        margin-top: 10px;
+    }
+
+    .mission {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .better-button {
+        padding: 12px 30px;
+        font-size: 14px;
+        border-left: 3px solid #fff;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+
+    /* Перестраиваем скролл‑контейнер */
+    .scroll-container {
+        margin-top: 30px;
+        margin-left: 0;
+        flex-direction: row;
+        justify-content: center;
+        max-height: unset;
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .circle {
+        margin-bottom: 0;
+        width: 12px;
+        height: 12px;
+        margin: 0 8px;
+    }
+
+    .circle:hover {
+        background-color: transparent;
+        border: 1px solid var(--secondary-color);
+        width: 16px;
+        height: 16px;
+        transform: scale(1.2);
+    }
+
+    .circle:hover::after {
+        content: attr(data-num);
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        font-size: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+}
+
+/* Дополнительная адаптация для очень маленьких экранов (до 480 px) */
+@media (max-width: 480px) {
+    .better-title {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .better-heading,
+    .better-heading-2 {
+        font-size: 20px;
+    }
+
+    .better-text,
+    .better-text-2 {
+        font-size: 13px;
+        line-height: 145%;
+    }
+
+    .better-button {
+        padding: 10px 20px;
+        font-size: 13px;
+        max-width: 220px;
+    }
+
+    .scroll-container {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .circle:hover {
+        width: 14px;
+        height: 14px;
+        padding: 5px;
+    }
+
+    .circle:hover::after {
+        font-size: 6px;
+    }
+}
+
+
+
+
+
+
+
+/* ------------approach------------ */
+
+@media (max-width: 1024px) {
+    .approach-container {
+        gap: 30px;
+        /* Уменьшаем отступы */
+        padding: 25px 0;
+        /* Уменьшаем padding */
+    }
+
+    .approach-item {
+        font-size: 40px;
+        /* Уменьшаем размер шрифта */
+    }
+
+    .approach-item::before {
+        margin-right: 20px;
+        /* Уменьшаем отступ у маркера */
+    }
+}
+
+/* Адаптация для мобильных устройств (до 767 px) */
+@media (max-width: 767px) {
+    .approach-container {
+        animation: none;
+        /* Отключаем анимацию на мобильных */
+        flex-wrap: wrap;
+        /* Переносим элементы на новые строки */
+        justify-content: flex-start;
+        /* Выравниваем по левому краю */
+        gap: 15px;
+        /* Уменьшаем отступы между элементами */
+        width: auto;
+        /* Освобождаем ширину */
+    }
+
+    .approach-item {
+        font-size: 24px;
+        /* Значительно уменьшаем размер шрифта */
+        text-align: center;
+        /* Центрируем текст */
+        min-width: auto;
+        /* Сбрасываем минимальную ширину */
+        padding: 10px 20px;
+        /* Добавляем отступы для лучшей читаемости */
+        box-sizing: border-box;
+    }
+
+    .approach-item::before {
+        content: none;
+        /* Скрываем маркеры на мобильных */
+    }
+}
+
+/* Дополнительная адаптация для очень маленьких экранов (до 480 px) */
+@media (max-width: 480px) {
+    .approach-container {
+        gap: 10px;
+        /* Ещё уменьшаем отступы */
+    }
+
+    .approach-item {
+        font-size: 20px;
+        /* Дополнительно уменьшаем шрифт */
+        padding: 8px 15px;
+        /* Корректируем отступы */
+    }
+}
+
+
+/* ---------training-men-women---------- */
+
+@media (max-width: 768px) {
+    .container-training-2 {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .training-article {
+        flex: 1 1 280px;
+        /* Минимальная ширина на планшетах */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-training-2 {
+        flex-direction: column;
+        /* Вертикальное расположение карточек */
+        align-items: stretch;
+        /* Растягиваем карточки на всю ширину */
+        gap: 10px;
+    }
+
+    .training-article {
+        flex: 1 1 auto;
+        /* Карточки занимают всю ширину контейнера */
+        max-width: none;
+    }
+
+    .gear-title {
+        font-size: 11px;
+        /* Уменьшаем шрифт на маленьких экранах */
+        padding: 30px 15px;
+    }
+
+    .svg-training {
+        right: 15px;
+        /* Меньший отступ на мобильных */
+    }
+}
+
+
+/* ---------------Programs--------------- */
+
+
+
+@media (max-width: 769px) {
+    .programs-title {
+        font-size: 40px;
+    }
+
+    .programs-text {
+        font-size: 16px;
+        line-height: 169%;
+    }
+
+    .programs-container {
+        flex-direction: row;
+        /* Возвращаем горизонтальное расположение */
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .programs {
+        width: calc(33.333% - 20px);
+        /* Три карточки в ряд с отступами */
+        max-width: none;
+    }
+
+    .text-afish {
+        text-align: left;
+        letter-spacing: 0.2em;
+    }
+
+    .gym-programs {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .within-programs {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        right: -300px;
+        opacity: 0.3;
+        pointer-events: none;
+        z-index: -1;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 250px;
+        line-height: 98%;
+        color: transparent;
+        -webkit-text-stroke: 3px white;
+    }
+
+    .vector-img {
+        position: absolute;
+        top: -142px;
+        left: -198px;
+        z-index: -1;
+    }
+}
+
+/* --- ДЕСКТОП (1024px и больше) --- */
+@media (max-width: 1025px) {
+    .programs-title {
+        font-size: 50px;
+    }
+
+
+
+    .gym-programs {
+        font-size: 36px;
+    }
+
+    .programs {
+        margin-top: 50px;
+    }
+
+    .heading-programs {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .programs-title {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 32px;
+        color: var(--main-color);
+        margin-bottom: 10px;
+    }
+
+    .programs-text {
+        max-width: 100%;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #979797;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    /* Скрываем декоративные элементы на мобильных */
+    .within-programs,
+    .vector-img {
+        display: none;
+    }
+
+    .programs-container {
+        display: flex;
+        flex-direction: column;
+        /* Карточки в столбец */
+        align-items: center;
+        gap: 30px;
+        /* Отступы между карточками */
+        margin-bottom: 80px;
+        position: relative;
+    }
+
+    .programs {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .programs__sport {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 165, 0, 0);
+        transition: background 0.3s ease;
+    }
+
+    .image-container:hover .overlay {
+        background: var(--programs-color);
+    }
+
+    .text-afish {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        color: var(--secondary-color);
+        text-align: center;
+        margin: 0;
+    }
+
+    .strengh::before {
+        content: '•';
+        color: var(--main-color);
+        padding-left: 5px;
+        padding-right: 8px;
+    }
+
+    .gym-programs {
+        padding-top: 4px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        color: #fff;
+        border-bottom: 1px solid var(--disabled-color);
+        padding-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    .gym-programs::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: #ff9500;
+        transition: width 1s ease;
+    }
+
+    .gym-programs:hover::after {
+        width: 100%;
+    }
+}
+
+
+/* ----------------view------------------- */
+
+
+@media (max-width: 1025px) {
+
+    .view {
+        background-color: var(--secondary-color);
+        position: relative;
+        padding: 20px 0;
+
+    }
+
+    .container-view {
+        position: relative;
+    }
+
+    .view-heading {
+        text-align: center;
+        position: relative;
+    }
+
+    .view-text {
+        color: var(--bg-color);
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 20px 0;
+        cursor: pointer;
+        margin: 0;
+
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 769px) {
+    .view {
+        padding: 30px 0;
+
+    }
+
+    .view-text {
+        font-size: 16px;
+        line-height: 144%;
+        letter-spacing: 0.1em;
+        padding: 30px 0;
+
+
+        .view-img {
+            position: absolute;
+            top: 18px;
+            transform: translateX(275%);
+            max-width: none;
+        }
+    }
+}
+
+
+
+/* --------------box---------------*/
+
+
+@media (max-width: 1025px) {
+    .container-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .two-women {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .image-wrapper {
+        width: 100%;
+        /* Ширина на всю область */
+        text-align: center;
+        /* Центрирование содержимого */
+    }
+
+    .box-women,
+    .kick-box-women {
+        width: 100%;
+        /* Изображения занимают всю ширину контейнера */
+        height: auto;
+        /* Сохранение пропорций */
+        display: block;
+    }
+
+    .image-container-logo {
+        margin-top: 30px;
+        /* Отступ сверху для логотипа */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-power {
+        margin-bottom: 5px;
+        /* Убираем трансформацию */
+        height: 80px;
+        /* Уменьшаем размер логотипа для мобильных */
+        max-width: 70%;
+        /* Ограничение ширины */
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+
+    .image-power {
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+    .box-women,
+    .kick-box-women {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-power {
+        height: 30px;
+    }
+}
+
+
+/* ------------Pulse------------ */
+
+/* Адаптация для ширины до 1025px */
+@media (max-width: 1025px) {
+    .container-pulse {
+        padding-left: 50px;
+        padding-right: 200px;
+    }
+
+    .numbers {
+        font-size: 60px;
+    }
+
+    .title-numbers {
+        font-size: 12px;
+    }
+}
+
+/* Адаптация для ширины до 890px */
+@media (max-width: 890px) {
+    .containers-best-pulse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-pulse {
+        padding: 60px 20px 100px;
+        text-align: center;
+    }
+
+    .pulse-title {
+        font-size: 48px;
+    }
+
+    .pulse-title::before,
+    .plan-2::before,
+    .plan-3::before,
+    .plan-4::before {
+        opacity: 0;
+    }
+
+
+    .plan-text {
+        font-size: 56px;
+    }
+
+    .container-best {
+        padding-top: 60px;
+    }
+
+    .container-numbers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-numbers:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid #171515;
+    }
+
+
+}
+
+/* Адаптация для ширины до 768px (планшеты) */
+@media (max-width: 768px) {
+    .container-pulse {
+        padding: 50px 15px 80px;
+    }
+
+    .pulse-title {
+        font-size: 36px;
+    }
+
+    .plan-text {
+        font-size: 44px;
+        padding-bottom: 15px;
+    }
+
+    .gym-title {
+        font-size: 16px;
+    }
+
+    .gym-text {
+        font-size: 13px;
+    }
+
+    .numbers {
+        font-size: 50px;
+    }
+
+    .container-numbers {
+        gap: 5px;
+    }
+
+    .card-numbers {
+        padding: 60px 30px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .container-pulse {
+        padding: 40px 10px 60px;
+    }
+
+    .pulse-title {
+        font-size: 28px;
+        opacity: 1;
+    }
+
+    .pulse-title:hover::before {
+        background-color: transparent;
+    }
+
+    .plan-text {
+        font-size: 32px;
+        opacity: 1;
+        padding-bottom: 10px;
+    }
+
+    .plan-relative {
+        margin-top: 20px;
+    }
+
+    .gym-title {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .gym-text {
+        font-size: 12px;
+        line-height: 150%;
+        max-width: 100%;
+    }
+
+    .container-numbers {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .card-numbers {
+        padding: 40px 20px;
+        border: none;
+        border-bottom: 2px solid var(--bg-color);
+    }
+
+    .numbers {
+        font-size: 40px;
+    }
+
+    .title-numbers {
+        font-size: 11px;
+    }
+
+    .plan-relative p {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-pulse {
+        padding: 35px 8px 50px;
+    }
+
+    .pulse-title {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .plan-text {
+        font-size: 30px;
+        padding-bottom: 8px;
+        line-height: 1.3;
+    }
+
+    .gym-title {
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
+
+    .gym-text {
+        font-size: 11px;
+        line-height: 145%;
+    }
+
+    .numbers {
+        font-size: 36px;
+    }
+
+    .title-numbers {
+        font-size: 10px;
+    }
+
+    .card-numbers {
+        padding: 35px 15px;
+    }
+
+
+    .container-numbers {
+        gap: 0;
+    }
+
+
+    .title-numbers {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .container-pulse {
+        padding: 30px 6px 40px;
+    }
+
+    .pulse-title {
+        font-size: 24px;
+        line-height: 1.15;
+    }
+
+    .plan-text {
+        font-size: 28px;
+        padding-bottom: 6px;
+        line-height: 1.25;
+    }
+
+    .gym-title {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .gym-text {
+        font-size: 10px;
+        line-height: 140%;
+        max-width: 100%;
+    }
+
+    .numbers {
+        font-size: 32px;
+    }
+
+    .title-numbers {
+        font-size: 9px;
+    }
+
+    .card-numbers {
+        padding: 30px 10px;
+    }
+
+
+    .containers-best-pulse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-relative p {
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .card-numbers:not(:last-child) {
+        border-bottom: 1px solid var(--bg-color);
+    }
+
+    .gym-text,
+    .title-numbers {
+        line-height: 135%;
+    }
+
+
+    .container-numbers {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* -------------------card-training------------- */
+
+
+@media (max-width: 1025px) {
+    .article-good {
+        max-width: 320px;
+    }
+
+    .training-heading {
+        font-size: 24px;
+    }
+
+
+}
+
+
+@media (max-width: 890px) {
+
+    .container-weight,
+    .container-plan {
+        flex-wrap: wrap;
+    }
+
+    .article-good {
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .training-flex {
+        padding: 50px 15px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container-weight,
+    .container-plan {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .article-good {
+        width: 100%;
+        max-width: 400px;
+        flex-direction: column;
+    }
+
+    .good-img img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .title-training {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .training-heading {
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+
+    .training-text {
+        font-size: 14px;
+        line-height: 150%;
+        padding-bottom: 20px;
+    }
+
+    .training-link {
+        font-size: 14px;
+    }
+
+    .training-flex {
+        padding: 40px 15px 20px;
+    }
+
+    .card-vector {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .article-good {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .good-img img {
+        height: 200px;
+    }
+
+    .training-flex {
+        padding: 30px 10px 15px;
+    }
+
+    .title-training,
+    .training-heading,
+    .training-text,
+    .training-link {
+        text-align: center;
+    }
+
+    .good-link {
+        border-bottom: 1px solid #f47521;
+        padding-bottom: 3px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .training-heading {
+        font-size: 20px;
+    }
+
+    .training-text {
+        font-size: 13px;
+    }
+
+    .good-img img {
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 270px) {
+    .training-heading {
+        font-size: 18px;
+    }
+
+    .training-text {
+        font-size: 12px;
+    }
+
+    .good-img img {
+        height: 150px;
+    }
+
+    .training-flex {
+        padding: 20px 8px 12px;
+    }
+}
+
+
+
+/* ----------classes--------------- */
+
+
+@media (max-width: 1025px) {
+    .container-timetable {
+        margin-bottom: 120px;
+    }
+
+    .classes-title {
+        font-size: 44px;
+        padding-bottom: 40px;
+    }
+
+    .timetable-list {
+        gap: 40px;
+        padding-bottom: 50px;
+    }
+
+    .timetable-link {
+        font-size: 22px;
+    }
+
+    table {
+        width: 85%;
+    }
+
+    td {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-timetable table {
+        width: 100%;
+        table-layout: auto;
+        font-size: 0.9em;
+    }
+
+    .container-timetable th,
+    .container-timetable td {
+        padding: 6px 4px;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    .container-timetable .fitness {
+        font-size: 0.85em;
+    }
+}
+
+
+
+@media (max-width: 890px) {
+    .classes {
+        margin-top: 80px;
+    }
+
+    .container-timetable {
+        margin-bottom: 100px;
+    }
+
+    .classes-title {
+        font-size: 38px;
+        padding-bottom: 35px;
+    }
+
+    .timetable-list {
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+
+    .timetable-link {
+        font-size: 20px;
+    }
+
+    .timetable-link::before {
+        width: 35px;
+        height: 35px;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th,
+    td {
+        padding: 25px 5px;
+        font-size: 13px;
+    }
+
+    .fitness {
+        font-size: 14px;
+    }
+
+    .classes-img {
+        top: 40px;
+        right: 10px;
+        width: 140px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .classes {
+        margin-top: 60px;
+    }
+
+    .container-timetable {
+        margin-bottom: 80px;
+        padding: 0 15px;
+    }
+
+    .classes-title {
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+
+    /* Скрываем обычное меню, показываем гамбургер */
+    .timetable-list {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        margin: 0 auto 20px;
+        width: 30px;
+        height: 21px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    .mobile-menu-toggle span:nth-child(2) {
+        top: 9px;
+    }
+
+    .mobile-menu-toggle span:nth-child(3) {
+        top: 18px;
+    }
+
+    .timetable-list {
+        flex-direction: column;
+    }
+
+    .timetable-list.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .timetable-item {
+        width: 100%;
+    }
+
+    .timetable-link {
+        font-size: 18px;
+        opacity: 0.8;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .timetable-link::before {
+        left: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 30px;
+    }
+
+    .classes-img {
+        opacity: 0;
+    }
+
+
+    .timetable-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .card-time {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .card-day {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    }
+
+    .day-name {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        color: #b5b5b5;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+    }
+
+    .fitness {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+
+    .trainer {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 13px;
+        color: #979797;
+    }
+
+    /* Изображение */
+    .classes-img {
+        position: static;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 20px auto 0;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-timetable {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .container-timetable table {
+        border-spacing: 0;
+        font-size: 0.85em;
+    }
+
+    .container-timetable th,
+    .container-timetable td {
+        padding: 8px 6px;
+        white-space: nowrap;
+    }
+
+    .container-timetable .fitness {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .container-timetable table,
+    .container-timetable thead,
+    .container-timetable tbody,
+    .container-timetable th,
+    .container-timetable td,
+    .container-timetable tr {
+        display: block;
+    }
+
+    .container-timetable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .container-timetable tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .container-timetable td {
+        border: none;
+        position: relative;
+    
+    }
+
+    .container-timetable td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        font-weight: bold;
+    }
+}
+
+
+
+/* ------------view----------------- */
+
+
+
+@media (max-width: 1025px) {
+
+    .view {
+        background-color: var(--secondary-color);
+        position: relative;
+        padding: 20px 0;
+
+    }
+
+    .container-view {
+        position: relative;
+    }
+
+    .view-heading {
+        text-align: center;
+        position: relative;
+    }
+
+    .view-text {
+        color: var(--bg-color);
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 20px 0;
+        cursor: pointer;
+        margin: 0;
+
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 769px) {
+    .view {
+        padding: 30px 0;
+
+    }
+
+    .view-text {
+        font-size: 16px;
+        line-height: 144%;
+        letter-spacing: 0.1em;
+        padding: 30px 0;
+
+
+        .view-img {
+            position: absolute;
+            top: 18px;
+            transform: translateX(275%);
+            max-width: none;
+        }
+    }
+}
+
+/* ----------------videos--------------- */
+
+@media (max-width: 1025px) {
+    .lightbox-content video {
+        width: 95vw;
+        height: auto;
+    }
+}
+
+/* Адаптация для 890px */
+@media (max-width: 890px) {
+    .lightbox-content video {
+        width: 98vw;
+        height: auto;
+    }
+
+    .close-lightbox {
+        top: -25px;
+        right: -5px;
+        font-size: 36px;
+    }
+}
+
+/* Адаптация для 768px (планшеты) */
+@media (max-width: 768px) {
+    .lightbox-content video {
+        width: 100vw;
+        height: auto;
+        max-height: 70vh;
+    }
+
+    .close-lightbox {
+        top: -20px;
+        right: 0;
+        font-size: 32px;
+    }
+
+    .videos-svg {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Адаптация для 570px */
+@media (max-width: 570px) {
+    .lightbox-content video {
+        width: 100vw;
+        height: auto;
+        max-height: 60vh;
+    }
+
+    .close-lightbox {
+        top: -15px;
+        right: 5px;
+        font-size: 28px;
+    }
+
+    .videos-svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Адаптация для 490px */
+@media (max-width: 490px) {
+    .lightbox-content video {
+        width: 100vw;
+        height: auto;
+        max-height: 55vh;
+    }
+
+    .close-lightbox {
+        top: -12px;
+        right: 8px;
+        font-size: 24px;
+    }
+
+    .videos-svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Адаптация для 360px (смартфоны) */
+@media (max-width: 360px) {
+    .lightbox-content video {
+        width: 100vw;
+        height: auto;
+        max-height: 50vh;
+    }
+
+    .close-lightbox {
+        top: -10px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    .videos-svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox-content {
+        padding: 5px;
+    }
+}
+
+
+/* ---------fitness-center------------- */
+
+@media (max-width: 1025px) {
+    .center-title {
+        font-size: 48px;
+        padding-bottom: 50px;
+    }
+
+    .city-center {
+        font-size: 24px;
+    }
+}
+
+/* Адаптация для 890px */
+@media (max-width: 890px) {
+    .center-title {
+        font-size: 42px;
+        padding-bottom: 40px;
+    }
+
+    .city-center {
+        font-size: 22px;
+    }
+
+    summary {
+        padding: 12px;
+    }
+}
+
+/* Адаптация для 768px (планшеты) */
+@media (max-width: 768px) {
+    .fitness-container {
+        padding-top: 80px;
+        padding-bottom: 150px;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .center-title {
+        font-size: 36px;
+        padding-bottom: 30px;
+    }
+
+    .time-center {
+        font-size: 14px;
+    }
+
+    .city-center {
+        font-size: 20px;
+    }
+
+    .city-center::before {
+        width: 45px;
+        height: 45px;
+    }
+
+    summary::after {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Адаптация для 570px */
+@media (max-width: 570px) {
+    .center-title {
+        font-size: 32px;
+        text-align: left;
+        /* Левое выравнивание на маленьких экранах */
+    }
+
+    .time-center {
+        font-size: 13px;
+    }
+
+    .city-center {
+        font-size: 18px;
+    }
+
+    .city-center::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        /* Расстояние между элементами */
+    }
+
+    .pos-relative-fcs {
+        width: 100%;
+    }
+}
+
+/* Адаптация для 490px */
+@media (max-width: 490px) {
+    .center-title {
+        font-size: 28px;
+    }
+
+    .time-center {
+        font-size: 12px;
+    }
+
+    .city-center {
+        font-size: 16px;
+    }
+
+    .city-center::before {
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-center {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+/* Адаптация для 360px (смартфоны) */
+@media (max-width: 360px) {
+    .fitness-container {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+}
+
+
+/* ----------meet-pros----------- */
+
+
+.meet-pros {
+    margin-top: 85px;
+}
+
+.heading-meet {
+    position: relative;
+    text-align: center;
+    margin-bottom: 86px;
+}
+
+.meet-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.meet-text {
+    max-width: 468px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    color: #979797;
+    margin-left: 380px;
+}
+
+.within-meet {
+    position: absolute;
+    bottom: -18px;
+    left: -308px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 290px;
+    line-height: 98%;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.meet-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 134px;
+    position: relative;
+}
+
+.meet-card {
+    position: relative;
+}
+
+.meet__sport {
+    margin-bottom: 33px;
+}
+
+.text-afish {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: var(--secondary-color);
+}
+
+.gym-meet {
+    padding-top: 4px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 1px solid var(--disabled-color);
+    padding-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.vector__meet-img {
+    position: absolute;
+    top: 0px;
+    right: -113px;
+    z-index: -1;
+}
+
+/* --------hover------------ */
+
+.image__meet-container {
+    position: relative;
+}
+
+.image__meet-container img {
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 165, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.image__meet-container:hover .overlay {
+    background: var(--programs-color);
+}
+
+.gym-meet::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9500;
+    transition: width 1s ease;
+}
+
+.gym-meet:hover::after {
+    width: 100%;
+}
+
+.meet__pros-svg {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+/* Адаптация под мобильные устройства */
+
+@media (max-width: 1025px) {
+    .meet-text {
+        margin-left: 200px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .within-meet {
+        left: -200px;
+        font-size: 220px;
+    }
+
+    .meet-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 890px) {
+    .meet-title {
+        font-size: 50px;
+    }
+
+    .meet-text {
+        margin-left: 100px;
+        padding: 0 15px;
+    }
+
+    .within-meet {
+        left: -150px;
+        font-size: 180px;
+    }
+
+    .meet-container {
+        flex-wrap: wrap;
+    }
+
+    .vector__meet-img {
+        display: none;
+    }
+
+    .gym-meet {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .meet-title {
+        font-size: 40px;
+    }
+
+    .meet-text {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .within-meet {
+        display: none;
+    }
+
+    .meet-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meet-card {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 560px) {
+    .meet-title {
+        font-size: 32px;
+    }
+
+    .text-afish {
+        font-size: 14px;
+        letter-spacing: 0.1em;
+    }
+
+    .gym-meet {
+        font-size: 20px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .meet__sport {
+        margin-bottom: 20px;
+    }
+
+    .meet-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .meet-title {
+        font-size: 28px;
+    }
+
+    .meet-text {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .meet-container {
+        margin-bottom: 80px;
+    }
+
+    .meet__pros-svg {
+        width: 40px;
+        height: 40px;
+
+    }
+}
+
+@media (max-width: 370px) {
+    .meet-title {
+        font-size: 24px;
+    }
+
+    .text-afish {
+        font-size: 12px;
+        letter-spacing: 0.05em;
+    }
+
+    .gym-meet {
+        font-size: 18px;
+    }
+
+    .meet__sport {
+        width: 100%;
+        height: auto;
+    }
+
+    .meet-card {
+        width: 95%;
+        padding: 0 10px;
+    }
+}
+
+
+/* -----------lastest-blog--------- */
+
+
+/* --- Адаптация для 1025px --- */
+@media (max-width: 1025px) {
+    .lastest-title {
+        font-size: 50px;
+        padding-bottom: 200px;
+    }
+
+    .container-blog {
+        width: 95%;
+    }
+
+    .card-lastest {
+        padding-left: 30px;
+        gap: 20px;
+    }
+}
+
+/* --- Адаптация для 890px --- */
+@media (max-width: 890px) {
+    .lastest-title {
+        font-size: 45px;
+        padding-bottom: 180px;
+    }
+
+    .lastest-heading {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .card-lastest {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        gap: 35px;
+    }
+
+    .achieve img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* --- Адаптация для 768px (планшеты) --- */
+@media (max-width: 768px) {
+    .lastest-title {
+        font-size: 36px;
+        padding-bottom: 150px;
+    }
+
+    .lastest-heading {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .read-button {
+        padding: 18px 45px;
+        font-size: 14px;
+    }
+
+    .card-lastest {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 15px;
+    }
+
+    .achieve-text {
+        font-size: 15px;
+        max-width: 100%;
+    }
+}
+
+/* --- Адаптация для 590px --- */
+@media (max-width: 590px) {
+    .lastest-title {
+        font-size: 32px;
+        padding-bottom: 120px;
+    }
+
+    .container-blog {
+        width: 98%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .read-button {
+        padding: 15px 35px;
+        font-size: 13px;
+    }
+
+    .achieve-title {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+    }
+}
+
+/* --- Адаптация для 480px (мобильные телефоны) --- */
+@media (max-width: 480px) {
+    .lastest-title {
+        font-size: 28px;
+        padding-bottom: 100px;
+    }
+
+    .lastest-heading {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .card-lastest {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 10px;
+    }
+
+    .read-button {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+
+    .achieve-text {
+        font-size: 14px;
+    }
+}
+
+/* --- Адаптация для 360px (маленькие смартфоны) --- */
+@media (max-width: 360px) {
+    .lastest-title {
+        font-size: 24px;
+        padding-bottom: 80px;
+    }
+
+    .lastest-heading {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .read-button {
+        padding: 10px 25px;
+        font-size: 11px;
+    }
+
+    .achieve-title {
+        font-size: 10px;
+        letter-spacing: 0em;
+    }
+
+    .achieve-text {
+        font-size: 13px;
+    }
+
+    .card-lastest {
+        gap: 25px;
+    }
+}
+
+
+/* ----------footer-pulse------------ */
+
+
+/* --- Адаптация для 1025px --- */
+@media (max-width: 1025px) {
+    .footer-text {
+        font-size: 45px;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 32px;
+    }
+
+    .location-wrapper {
+        gap: 60px;
+    }
+}
+
+/* --- Адаптация для 890px --- */
+@media (max-width: 890px) {
+    .footer-text {
+        font-size: 40px;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 28px;
+    }
+
+    .location-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .container__two-section {
+        flex-direction: column;
+    }
+}
+
+
+/* --- Адаптация для 768px (планшеты) --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-text {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .footer-text::before {
+        left: 50%;
+        top: 50%;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 26px;
+    }
+
+    .location-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .double-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container__two-section {
+        flex-direction: column;
+    }
+
+
+}
+
+/* --- Адаптация для 590px --- */
+@media (max-width: 590px) {
+    .footer-text {
+        font-size: 32px;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 24px;
+    }
+
+    .contact-title,
+    .location-title {
+        font-size: 16px;
+    }
+
+    .city-location,
+    .city-location-2 {
+        font-size: 28px;
+    }
+
+    .location-text,
+    .location-text-2 {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .location-wrapper,
+    .container__two-section {
+        flex-direction: column;
+    }
+
+
+    .wrapper-contact {
+        padding-top: 8px;
+    }
+
+    .contact-title-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+/* --- Адаптация для 480px (мобильные телефоны) --- */
+@media (max-width: 480px) {
+    .container-button {
+        margin-bottom: 100px;
+    }
+
+    .footer-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 80px;
+    }
+
+    .footer-text {
+        font-size: 28px;
+    }
+
+    .logo footer__logo img {
+        width: 160px;
+        height: auto;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 22px;
+    }
+
+    .contact-title,
+    .location-title {
+        font-size: 14px;
+    }
+
+    .city-location,
+    .city-location-2 {
+        font-size: 24px;
+    }
+
+    .location-text,
+    .location-text-2 {
+        font-size: 14px;
+    }
+
+    .location-wrapper,
+    .container__two-section,
+    .double-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location-wrapper {
+        gap: 25px;
+    }
+
+    .facebook-svg,
+    .twitter-svg,
+    .instagram-svg {
+        padding-bottom: 10px;
+
+    }
+
+    .contact-title-2 {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+}
+
+/* --- Адаптация для 360px (маленькие смартфоны) --- */
+@media (max-width: 360px) {
+    .container-button {
+        margin-bottom: 80px;
+    }
+
+    .footer-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+    }
+
+    .footer-text {
+        font-size: 24px;
+    }
+
+    .logo footer__logo img {
+        width: 140px;
+        height: auto;
+    }
+
+    .mail-contact,
+    .number-contact {
+        font-size: 20px;
+    }
+
+    .contact-title,
+    .location-title {
+        font-size: 13px;
+    }
+
+    .city-location,
+    .city-location-2 {
+        font-size: 22px;
+    }
+
+    .location-text,
+    .location-text-2 {
+        font-size: 13px;
+    }
+
+    .facebook-svg,
+    .twitter-svg,
+    .instagram-svg {
+        padding-right: 10px;
+    }
+
+    .contact-title-2 {
+        padding-top: 20px;
+        padding-bottom: 12px;
+    }
+
+    .wrapper-contact {
+        padding-top: 6px;
+    }
+
+    .location-wrapper {
+        gap: 20px;
+    }
+}
+
+
+/* ------------copyright-------------- */
+
+/* --- Адаптация для 1025px --- */
+@media (max-width: 1025px) {
+    .copyright-text {
+        font-size: 15px;
+        padding: 25px 0;
+    }
+}
+
+/* --- Адаптация для 890px --- */
+@media (max-width: 890px) {
+    .copyright-text {
+        font-size: 14px;
+        line-height: 180%;
+        padding: 22px 0;
+    }
+}
+
+/* --- Адаптация для 768px (планшеты) --- */
+@media (max-width: 768px) {
+    .copyright-text {
+        font-size: 13px;
+        line-height: 170%;
+        padding: 20px 0;
+    }
+}
+
+/* --- Адаптация для 590px --- */
+@media (max-width: 590px) {
+    .copyright-text {
+        font-size: 12px;
+        line-height: 160%;
+        padding: 18px 0;
+    }
+}
+
+/* --- Адаптация для 480px (мобильные телефоны) --- */
+@media (max-width: 480px) {
+    .copyright-text {
+        font-size: 11px;
+        line-height: 150%;
+        padding: 16px 0;
+    }
+}
+
+/* --- Адаптация для 360px (маленькие смартфоны) --- */
+@media (max-width: 360px) {
+    .copyright-text {
+        font-size: 10px;
+        line-height: 140%;
+        padding: 14px 0;
+    }
+}

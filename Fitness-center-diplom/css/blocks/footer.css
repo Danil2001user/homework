@@ -1,0 +1,162 @@
+
+.container-button{
+    margin-bottom: 145px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    padding-bottom: 52px;
+    border-bottom: 1px solid #ffffff80;
+
+    margin-bottom: 100px;
+
+    position: relative;
+}
+
+.footer-text::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 67%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.footer-text:hover::before {
+    background-color: #f47521;
+}
+
+.footer-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* -----------contact----------- */
+
+
+
+
+.contact-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.mail-contact {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+
+}
+
+
+.wrapper-contact {
+    padding-top: 10px;
+}
+
+.number-contact {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+
+}
+
+.contact-title-2 {
+    padding-top: 40px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.facebook-svg {
+    padding-right: 35px;
+}
+
+.twitter-svg {
+    padding-right: 35px;
+}
+
+
+/* ----------------------location------------ */
+
+
+
+
+.container__two-section {
+    display: flex;
+}
+
+
+
+.location-title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: #a6a6a6;
+    padding-bottom: 25px;
+}
+
+.city-location {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+}
+
+.city-location-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+}
+
+
+.location-text {
+    padding-top: 4px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 200px;
+    padding-bottom: 24px;
+    color: #a6a6a6;
+}
+
+.location-text-2 {
+    padding-top: 4px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 200px;
+    color: #a6a6a6;
+}
+
+
+.location-wrapper{
+    display: flex;
+    gap: 90px;
+}
+
+.double-wrapper{
+    display: flex;
+    justify-content: space-between;
+}

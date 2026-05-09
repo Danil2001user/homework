@@ -1,0 +1,82 @@
+.container-training-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  gap: 1px;
+}
+
+.gear-section {
+  background-color: var(--disabled-color);
+  position: relative;
+  transition: all .5s;
+}
+
+
+
+.gear-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 144%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #141414;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.svg-training {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  transition: transform 0.4s ease;
+}
+
+
+.gear-section:hover {
+  transform: scale(1.05);
+  background: #e3f2fd;
+}
+
+.gear-section:hover .svg-training {
+  transform: translateY(-50%) translateX(8px) rotate(360deg);
+}
+
+/* ------hover----------- */
+
+
+.training-article {
+
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.training-article img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.training-article:hover img {
+  filter: brightness(0.7) saturate(1.2);
+  transform: scale(1.08);
+}
+
+.gear-section {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.training-article:hover .gear-section {
+  transform: translateY(0);
+}
+
+.gear-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

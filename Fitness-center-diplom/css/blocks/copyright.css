@@ -1,0 +1,17 @@
+.copyright {
+    background: #303030;
+}
+
+.copyright-text {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 194%;
+    color: #fff;
+    opacity: 0.6;
+    padding: 29px 0;
+}
+
+.market{
+    font-weight: 700;
+}
